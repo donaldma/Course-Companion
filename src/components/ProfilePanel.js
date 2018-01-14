@@ -78,16 +78,19 @@ class Profile extends React.Component {
           <div className='flex'><img src='/img/Year.png' className='flex-left'/><ListItem primaryText={year} className='flex-right'/></div>
           <div className='flex'><img src='/img/GradYear.png' className='flex-left'/><ListItem primaryText={gradYear} className='flex-right'/></div>
         </List>
-
-        <div style={{textAlign: 'center'}}> 
-          <Dropzone style={uploadStyles} 
-                    onDrop={(accepted, rejected) => this.setState({ accepted: accepted })}>
-              <p style={{paddingTop: '2.5em'}}>{this.state.accepted.length > 0 ? this.state.accepted[0].name : 'Drop files here.'}</p>
-          </Dropzone>
-          <button type='button' className='btn btn-default' onClick={() => this.handleUpload() }>
-            Upload
-          </button>
-        </div>
+        {
+          window.localStorage.userId ? 
+          <div style={{textAlign: 'center'}}> 
+            <Dropzone style={uploadStyles} 
+                      onDrop={(accepted, rejected) => this.setState({ accepted: accepted })}>
+                <p style={{paddingTop: '2.5em'}}>{this.state.accepted.length > 0 ? this.state.accepted[0].name : 'Drop files here.'}</p>
+            </Dropzone>
+            <button type='button' className='btn btn-default' onClick={() => this.handleUpload() }>
+              Upload
+            </button>
+          </div>
+          : undefined
+        }
         
       </div>
     )
