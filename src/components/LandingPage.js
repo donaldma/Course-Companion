@@ -3,7 +3,7 @@ import { withRouter } from 'react-router';
 
 export default class LandingPage extends React.Component {
     login() {
-        this.props.history.push('/app.js'); // for react-router@3 it would be this.props.router.push('/some/location');
+        this.props.history.push('app.js'); // for react-router@3 it would be this.props.router.push('/some/location');
     }
 
     render() {
@@ -18,7 +18,7 @@ export default class LandingPage extends React.Component {
                             </hgroup>
                             <form>
                                 <div className="group">
-                                    <button type="button" className="button buttonBlue">Login with Facebook</button>
+                                    <button type="button" className="button buttonBlue" onClick={this.login}>Login with Facebook</button>
                                 </div>
                             </form>
                         </div>
