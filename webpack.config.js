@@ -24,7 +24,11 @@ module.exports = {
     rules: [
       { test: /\.js?$/,
         loader: 'babel-loader',
-        include: path.join(__dirname, 'src')
+        include: path.join(__dirname, 'src'),
+        query: {
+          presets: ['es2017', 'react', 'stage-0', 'es2015-native-modules'],
+          plugins: ['transform-decorators-legacy', 'transform-class-properties']
+        }
       },
       { test: /\.scss?$/,
         loader: 'style-loader!css-loader!sass-loader',
