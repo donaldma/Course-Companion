@@ -11,6 +11,8 @@ export default class CourseList extends React.Component {
   render() {
     const imgSrc = 'https://23916-presscdn-pagely.netdna-ssl.com/wp-content/uploads/StrangerDanger.jpg'
     const courseName = 'PSYC 300 001'
+    const courseName2 = 'ASIA 371 003'
+    const courseName3 = 'PSYC 361 101'
     const styles = {
       slide: {
         padding: 15,
@@ -48,15 +50,7 @@ export default class CourseList extends React.Component {
                 <List>
 
                   <ListItem
-                    primaryText="Felix"
-                    leftAvatar={<Avatar src={imgSrc} />}
-                    />
-                  <ListItem
                     primaryText="Stanford"
-                    leftAvatar={<Avatar src={imgSrc} />}
-                    />
-                  <ListItem
-                    primaryText="Donald"
                     leftAvatar={<Avatar src={imgSrc} />}
                     />
                   <ListItem
@@ -76,7 +70,7 @@ export default class CourseList extends React.Component {
           </div>
 
           <div className='course-list-container' style={Object.assign({}, styles.slide, styles.slide2)}>
-              <Subheader style={{fontWeight: '600', color: 'black', fontSize: '20px'}}>{courseName}</Subheader>
+              <Subheader style={{fontWeight: '600', color: 'black', fontSize: '20px'}}>{courseName2}</Subheader>
               <Paper style={{maxHeight: 300, overflow: 'auto'}}>
                 <List>
 
@@ -96,10 +90,6 @@ export default class CourseList extends React.Component {
                     primaryText="Irem"
                     leftAvatar={<Avatar src={imgSrc} />}
                     />
-                  <ListItem
-                    primaryText="Jengaman"
-                    leftAvatar={<Avatar src={imgSrc} />}
-                    />
                     <ListItem
                       primaryText="Jones"
                       leftAvatar={<Avatar src={imgSrc} />}
@@ -110,7 +100,7 @@ export default class CourseList extends React.Component {
 
 
           <div className='course-list-container' style={Object.assign({}, styles.slide, styles.slide3)}>
-              <Subheader style={{fontWeight: '600', color: 'black', fontSize: '20px'}}>{courseName}</Subheader>
+              <Subheader style={{fontWeight: '600', color: 'black', fontSize: '20px'}}>{courseName3}</Subheader>
               <Paper style={{maxHeight: 300, overflow: 'auto'}}>
                 <List>
 
@@ -120,10 +110,6 @@ export default class CourseList extends React.Component {
                     />
                   <ListItem
                     primaryText="Stanford"
-                    leftAvatar={<Avatar src={imgSrc} />}
-                    />
-                  <ListItem
-                    primaryText="Donald"
                     leftAvatar={<Avatar src={imgSrc} />}
                     />
                   <ListItem
