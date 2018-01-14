@@ -13,3 +13,11 @@ body {
 .home-container {
   margin-top: 7em;
 }
+
+.slick-next::before {
+  color: black;
+}
+
+.slick-prev::before {
+  color: black;
+}
