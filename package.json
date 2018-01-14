@@ -17,10 +17,12 @@
     "javascript"
   ],
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "express": "^4.15.2",
     "include-media": "^1.4.9",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-bootstrap": "^0.32.0",
+    "react-dom": "^15.6.2"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
