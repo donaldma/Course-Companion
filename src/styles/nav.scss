@@ -1,0 +1,78 @@
+.navbar {
+  height: 7em;
+  border-radius: 0px;
+  background-color: $white;
+  border-top: 2px solid #E0E1E1;
+  z-index: 9999;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-avatar {
+  border-radius: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+.nav-logo {
+  float: left;
+  padding: 5px 10px 0 0;
+  li {
+    padding-left: 2em;
+    font-size: 10px;
+    display: inline;
+    a {
+      color: $grey;
+    }
+  }
+}
+
+.nav-menu {
+  margin-left: 10px;
+  border: none;
+}
+
+.navbar-toggle {
+  border: none;
+  float: left;
+}
+
+.navbar-default .navbar-toggle>li>a:focus,
+.navbar-default .navbar-toggle>li>a:hover {
+  color: $dark-navyblue;  
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  color: $dark-navyblue;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 767px) {
+  .full-nav {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-logo{
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .mobile-nav {
+    display: none !important;
+  }
+}
+
+.fa-lg {
+  vertical-align: 0%;
+}
