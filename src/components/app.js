@@ -1,12 +1,11 @@
 import React from 'react'
-import { Button } from 'react-bootstrap';
 import NavigationBar from './NavigationBar.js'
 import ProfilePanel from './ProfilePanel.js'
 import CourseList from './CourseList.js'
 
 export default class App extends React.Component {
   render () {
-    return (    
+    return (
 			<div>
 				<NavigationBar />
 				<div className='container home-container'>
