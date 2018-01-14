@@ -19,6 +19,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "express": "^4.15.2",
+    "fullcalendar": "^3.8.0",
     "include-media": "^1.4.9",
     "react": "^15.5.4",
     "react-bootstrap": "^0.32.0",
