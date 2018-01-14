@@ -1,0 +1,19 @@
+.profile-panel-container {
+  background-color: white;
+  padding: 3em;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px; 
+  background-color: grey;
+  display: inline-block;
+  background-position: 50% 50%;
+  background-repeat:no-repeat; 
+  background-size: 60px
+}
