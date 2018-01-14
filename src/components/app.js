@@ -12,13 +12,13 @@ import Calendar from './calendar'
 
 export default class App extends React.Component {
   render () {
-    return (    
+    return (
     <HashRouter>
         <div>
             <h1 className='f-s-48'>Welcome, Bootstrap is in!</h1>
             <Button>Test</Button>
             <h1>Simple Test</h1>
-        
+
             {/* NAV COMPONENT */}
             <ul className="header">
                 <li><NavLink to="/">Home</NavLink></li>
@@ -29,9 +29,10 @@ export default class App extends React.Component {
                 <Route path="/" component={Home}/>
                 <Route path="/stuff" component={Stuff}/>
                 <Route path="/contact" component={Contact}/>
+                <Route path="/calendar" component={Calendar}/>
             </div>
-        
-            
+
+
             <Profile />
             <Calendar />
         </div>
@@ -39,6 +40,3 @@ export default class App extends React.Component {
     );
   }
 }
-
-
-
