@@ -44,7 +44,7 @@ class App extends React.Component {
 							<ProfilePanel user={this.state.user}/>
 						</div>
 						<div className='col-xs-12 col-md-7'>
-							<CourseList />
+							<CourseList userId={window.localStorage.userId}/>
 						</div>
 					</div>
 				</div>
