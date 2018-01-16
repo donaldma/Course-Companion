@@ -86,7 +86,7 @@ class CourseList extends React.Component {
     }
 
     return (
-
+      
       <div>
         <Slider {...settings}>
 
